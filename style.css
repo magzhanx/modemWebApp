@@ -1,0 +1,71 @@
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #003366;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .sidebar button {
+      background: none;
+      color: white;
+      border: none;
+      padding: 1rem;
+      text-align: left;
+      cursor: pointer;
+      width: 100%;
+    }
+    .sidebar button:hover,
+    .sidebar button.active {
+      background-color: #005599;
+    }
+
+    .main {
+      flex-grow: 1;
+      padding: 2rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .well-card {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .status {
+      font-weight: bold;
+      color: green;
+    }
+    .status.stopped {
+      color: red;
+    }
+    button.control {
+      padding: 0.5rem 1rem;
+      background: #004477;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
